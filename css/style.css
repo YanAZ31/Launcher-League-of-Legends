@@ -1,0 +1,166 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: "inter";
+    --bg-login: #DBD4EF;
+    --radius: 4px;
+    --default-button: #000;
+    --title-footer: 12px;
+    --bg-facebook: #1877F2;
+    --bg-google:#fff;
+    --bg-xbox: #107C10;
+    
+}
+
+body{
+    height: 100vh;
+}
+
+
+.login{
+    max-width: 426px;
+    background-color: var(--bg-login);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login img{
+    width: 128px;
+    margin: 20px 80px;
+}
+
+.video{
+    height: 100vh;
+    background-size:100% 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.video video{
+  height: 100%;
+  width: 100%;
+ object-fit: cover;
+  
+  
+    
+ 
+}
+
+.video svg{
+    position: absolute;
+    bottom:10px;
+    right: 15px;
+}
+
+.main-container{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.input-text{
+    width: 314px;
+    height: 44px;
+    padding: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 28px;
+    border-radius: var(--radius);
+}
+
+.buttons-collection{
+    margin-bottom: 20px;
+
+}
+.buttons-collection a{
+    display: inline-block;
+    width: 56px;
+    height: 33px;
+    padding-top:8px ;
+    border-radius: var(--radius);
+  
+}
+/* Especificidade maior */
+.buttons-collection i{
+    color: var(--bg-google);
+
+}
+
+.submit{
+    width: 59px;
+    height: 61px;
+    color: var(--bg-google);
+    font-size: 15px;
+    background-color: var(--default-button);
+    border-radius: var(--radius);
+}
+
+.upper{
+    text-align: center;
+}
+
+.upper h3{
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.checkbox{
+    text-align: center;
+    width: 296px;
+    /* margin-left: 70px; */
+    /* background-color: #000; */
+    margin-bottom: 50px;
+}
+
+.container-footer h3{
+    font-size: var(--title-footer);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-footer i{
+    font-size: 7px;
+    text-align: center;
+
+    
+}
+.termos{
+    width: 210px;
+   
+}
+.footer{
+   margin: auto;
+}
+.footer h4{
+ text-align: right;
+ font-size: 10px;
+ font-weight: bold;
+
+}
+
+.sublinhado{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.facebook{
+    background-color: var(--bg-facebook);
+}
+
+.google {
+    background-color: var(--bg-google);
+}
+
+.xbox{
+    background-color: var(--bg-xbox);
+}
+.apple{
+    background-color: var(--default-button);
+}
+
+.google i{
+    color: var(--default-button);
+}
